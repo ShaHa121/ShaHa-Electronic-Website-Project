@@ -1,23 +1,24 @@
 body {
     background: url('Tech_Tronic.jpg') no-repeat;
     background-size: cover;
-    font-family: Arial;
     color: white;
+    font-family: Arial;
 }
 
 ul {
-    display: block;
+    display:inline-block; 
     margin: 0px;
     padding: 0px;
     list-style: none;
-    width: 100%;
+    background-color:black; /*Instead of colouring each li - color in black the entire ul*/
+    width: 100%; /*To make it as wide as the screen*/
 }
 
 ul li {
     float: left;
     width: 200px;
     height: 40px;
-    background-color: black;
+    /*background-color: black;*/ /*Instead of colouring each li - color in black the entire ul*/
     opacity: .9;
     line-height: 40px;
     text-align: center;
@@ -40,31 +41,36 @@ ul li:hover ul li {
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*
-.left {
-    float: left;
-    width: 40%;
-    padding: 0 20px;
-    overflow: hidden;
-    color:black;
-}
-
-.general {
-    float: left;
-    width: 40%;
-    padding: 0 20px;
-    overflow: hidden;
-    color:black;
-}*/
 
 .container{
-    display: flex;
+    display: flex;/* Flex container !*/
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
 
+.left{
+    display:inline-block;
+    color: black;
+    width: 20%;
+    background-color: aqua;
+    overflow-wrap: break-word;
+}
 
+.general img{
+    width: 100%;
+    height: auto;
+}
+
+.general {
+    width: 20%;
+}
+
+
+.general h2{
+    color: red;
+}
